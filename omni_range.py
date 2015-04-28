@@ -7,17 +7,26 @@ import numpy as np
 
 def plot_omni(t1, t2):
 
-	"""TODO: plot the OMNI solar win and IMF data """
+	"""TODO: plot the OMNI solar wind and IMF data """
 
 
 
 
 def rd_omni(t1, t2):
 
-	"""REad the OMNI solar wind and IMF data"""
+	"""Read the OMNI solar wind (pt, pn, pv)  and IMF (|B|, Bx, By, Bz) data
+	Hourly data already downloaded to text files - http://sprg.ssl.berkeley.edu/~hbain/sep_data/omni/
+	Original data can be found http://omniweb.gsfc.nasa.gov
+	"""
 
-	year = '2012'
+	#convert time to datetime format
+	dt1 = datetime.datetime.strptime(t1, "%d-%b-%Y %H:%M")
+	dt2 = datetime.datetime.strptime(t2, "%d-%b-%Y %H:%M")
 
+	year = dt1.year
+
+	#Data files can be found at http://sprg.ssl.berkeley.edu/~hbain/sep_data/omni/
+	#original data can be found at http://omniweb.gsfc.nasa.gov
 	fname = '/Users/hazelbain/Dropbox/sep_archive/omni/omni2_'+year+'.dat.txt'
 
 	#column names in omni data file (variables "v" need to be named correctly)
