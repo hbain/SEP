@@ -72,3 +72,20 @@ The exact URL of the data is determined through input arguements to routine i.e.
 	let_sum_dates0_a, let_sum_lcurve_a = pr.parse_let_proton_range(t1, t2, 'a', '1')
 
 	het_sum_dates0_a, het_sum_lcurve_a = pr.het_proton_lcurve_range(t1, t2, 'a', '1')
+
+
+
+## Shocks 
+
+### rd_ace_shocks.py
+
+Check for shock passages at the ACE spacecraft, using the identified shock list compiled at the CfA https://www.cfa.harvard.edu/shocks/ac_master_data/ac_master_2010.html
+
+Currently the identified shocks are saved as a text file ace_shocks.txt
+
+	import rd_ace_shocks as ashks
+
+	ash = ashks.rd_ace_shocks()
+	
+	tse = ashks.time_in_range(t1, t2, ash, dtfmt=1)
+
