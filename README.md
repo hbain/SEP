@@ -77,6 +77,21 @@ The exact URL of the data is determined through input arguements to routine i.e.
 
 ## Shocks 
 
+### rd_shocks_xls.py
+
+Check for shock passages at the STEREO spacecraft, using the identified shock list compiled by Lan Jian
+http://www-ssc.igpp.ucla.edu/forms/stereo/stereo_level_3.html
+
+Currently the identified shocks are saved as a text file STEREO_Level3_Shock2.xls
+
+	import rd_shocks_xls as shks
+
+	tshock_sta, tshock_stb = shks.stereo_shock()			#read in list of shocks
+
+	tsa = shks.time_in_range(t1, t2, tshock_sta, dtfmt=1) 
+
+	tsb = shks.time_in_range(t1, t2, tshock_stb, dtfmt=1) 
+
 ### rd_ace_shocks.py
 
 Check for shock passages at the ACE spacecraft, using the identified shock list compiled at the CfA https://www.cfa.harvard.edu/shocks/ac_master_data/ac_master_2010.html
@@ -86,6 +101,6 @@ Currently the identified shocks are saved as a text file ace_shocks.txt
 	import rd_ace_shocks as ashks
 
 	ash = ashks.rd_ace_shocks()
-	
+
 	tse = ashks.time_in_range(t1, t2, ash, dtfmt=1)
 
