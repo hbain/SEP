@@ -1,4 +1,5 @@
-# SEP
+# Solar Energetic Particle Routines
+
 Routines to read particle, magnetic field and solar wind data during solar energetic particle events from instruments on STEREO and ACE.
 
 All routines take date range input in the format
