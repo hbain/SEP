@@ -25,7 +25,7 @@ Read the ACE EPAM protons from text files that were previously downloaded (Not s
 	epam_dates0, epam_lcurve = pre.parse_epam_proton_range(t1, t2)
 
 
-STEREO
+# STEREO
 
 ### plastic_range.py
 
