@@ -29,7 +29,7 @@ STEREO
 Read and plot the STEREO PLASTIC data (solar wind density, temperature, velocity). Reads the data from http://stereo-ssc.nascom.nasa.gov/data/ins_data/plastic/level2/Protons/ASCII/... The exact URL of the data is determined through input arguements to routine i.e. start time, end time, spacecraft (A or B) and temporal resolution. 
 
 	import plastic_range as pl
-
+	
 	pla_dates0_a, pla_n_a, pla_v_a, pla_t_a = pl.parse_plastic_range(t1, t2, 'a', 1)
 
 
