@@ -37,3 +37,7 @@ pla_dates0_a, pla_n_a, pla_v_a, pla_t_a = pl.parse_plastic_range(t1, t2, 'a', 1)
 Read and plot the STEREO MAG data (Br, Bt, Bn, B, Blat, Blon)
 STEREO MAG ASCII files created here: http://aten.igpp.ucla.edu/forms/stereo/level2_plasma_and_magnetic_field.html
 Example of 1 minute time resolution files can be found here: http://sprg.ssl.berkeley.edu/~hbain/sep_data/MAG/
+
+import mag_range as mg
+
+mag_dates0_a, Br_a, Bt_a, Bn_a, B_a, Blat_a, Blon_a = mg.parse_mag_range(t1,t2, 'a', 1)
