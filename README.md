@@ -6,6 +6,8 @@ All routines take date range input in the format
 	t1 = '17-jul-2012 00:00'
 	t2 = '23-jul-2012 00:00'
 
+## Earth
+
 ### omni_range.py
 
 Read and plot the OMNI solar wind (pt, pn, pv)  and IMF (|B|, Bx, By, Bz) data stored in text files previously downloaded from http://omniweb.gsfc.nasa.gov. 
@@ -25,7 +27,7 @@ Read the ACE EPAM protons from text files that were previously downloaded (Not s
 	epam_dates0, epam_lcurve = pre.parse_epam_proton_range(t1, t2)
 
 
-# STEREO
+## STEREO
 
 ### plastic_range.py
 
