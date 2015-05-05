@@ -11,3 +11,5 @@ Things to do...in no particular order:
 - Read the data in to Pandas arrays? Currently data is just in a numpy array. 
 
 - Write some code to query the OMNI, STEREO MAG, ACE EPAM web servers for the data instead of reading from text files which have to be downloaded by the user prior to running the routines.
+
+- Note that the STEREO spacecraft sometimes filp. That can change some of the R,T,N directions

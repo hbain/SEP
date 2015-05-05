@@ -31,3 +31,9 @@ Read and plot the STEREO PLASTIC data (solar wind density, temperature, velocity
 import plastic_range as pl
 
 pla_dates0_a, pla_n_a, pla_v_a, pla_t_a = pl.parse_plastic_range(t1, t2, 'a', 1)
+
+
+- mag_range.py
+Read and plot the STEREO MAG data (Br, Bt, Bn, B, Blat, Blon)
+STEREO MAG ASCII files created here: http://aten.igpp.ucla.edu/forms/stereo/level2_plasma_and_magnetic_field.html
+Example of 1 minute time resolution files can be found here: http://sprg.ssl.berkeley.edu/~hbain/sep_data/MAG/
