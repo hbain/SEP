@@ -20,10 +20,10 @@ def rd_omni(t1, t2):
 	"""
 
 	#convert time to datetime format
-	dt1 = datetime.datetime.strptime(t1, "%d-%b-%Y %H:%M")
-	dt2 = datetime.datetime.strptime(t2, "%d-%b-%Y %H:%M")
+	dt1 = datetime.strptime(t1, "%d-%b-%Y %H:%M")
+	dt2 = datetime.strptime(t2, "%d-%b-%Y %H:%M")
 
-	year = dt1.year
+	year = str(dt1.year)
 
 	#Data files can be found at http://sprg.ssl.berkeley.edu/~hbain/sep_data/omni/
 	#original data can be found at http://omniweb.gsfc.nasa.gov

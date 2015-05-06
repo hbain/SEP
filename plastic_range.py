@@ -243,7 +243,7 @@ if __name__ == "__main__":
     parser.add_argument('t2', type = str,  help='Ending time for plots')
     parser.add_argument('stereo', type = str,  help='Which STEREO Spacecraft')
     parser.add_argument('tres', type = str,  help='Temporal Resolution')
-   	args = parser.parse_args()
+    args = parser.parse_args()
 
     result = make_plastic_plots_month(args.t1, args.t2, args.stereo, args.tres)
 
